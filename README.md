@@ -1,9 +1,9 @@
 Sublime Text 2 File Locking
 ====================
 
-This is a quick plugin I wrote for a team project I'm working on that's contained entirely a shared Dropbox folder.
+This is a quick plugin I wrote for a team project I'm working on that's contained entirely in a shared Dropbox folder.
 
-Due to the lack of a listener in the API for detecting operations that read files but don't actually open an editing buffer (e.g. file previews), this plugin works best when those features are avoided. Otherwise you'll run into issues with files that are locked even though nobody's editing them. I've included a command-line utility, viewlocks.py, that can manually delete locks if that happens.
+Files are locked when opened and unlocked when closed. Due to the lack of a listener in the API for detecting operations that read files but don't actually open an editing buffer (e.g. file previews), this plugin works best when those features are avoided. Otherwise you'll run into issues with files that are locked even though nobody's editing them.
 
 Use at your own risk and hack as needed.
 
@@ -24,6 +24,6 @@ Display all locks set by the team member who has their 'me' variable set to 'joh
 
     python viewlocks.py john
 
-Remove all locks set by john:
+Manually remove all locks set by john:
 
     python viewlocks.py john -r
