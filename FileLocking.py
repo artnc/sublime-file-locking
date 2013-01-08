@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 # FileLocking v1.05
 # Art Chaidarun
 # 2012-07-16
