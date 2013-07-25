@@ -5,7 +5,7 @@ This is a quick plugin I wrote for a team project I'm working on that's containe
 
 Files are locked when opened and unlocked when closed. Due to the lack of a listener in the API for detecting operations that read files but don't actually open an editing buffer (e.g. file previews), this plugin works best when those features are avoided. Otherwise you'll run into issues with files that are locked even though nobody's editing them.
 
-Use at your own risk and hack as needed.
+Use at your own risk and hack as needed. Released under the MIT license.
 
 Getting started
 ---------------
