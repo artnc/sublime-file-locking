@@ -24,9 +24,9 @@ class FileLockingCommand(sublime_plugin.EventListener):
 
   forceclose = ""
 
-  def on_load(self, view):
+  def on_modified(self, view):
     if view.file_name() is not None:
-      print(view.file_name() + ": " + "on_load")
+      print(view.file_name() + ": " + "on_modified")
       view.run_command("check_lock")
 
   def on_close(self, view):
